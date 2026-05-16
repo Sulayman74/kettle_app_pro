@@ -8,7 +8,7 @@ import { dirname, join } from 'path';
 // export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/serviceAccountKey.json"
 
 // Import data
-import { BBQ_DATA, LAB_DATA, SHOP_ITEMS, RECIPES, METHOD_LEGEND } from '../src/data/kettleData.js';
+import { BBQ_DATA, LAB_DATA, SHOP_ITEMS, RECIPES, METHOD_LEGEND } from './seedData.js';
 
 const APP_ID = 'kettle-master-v1';
 

@@ -1,11 +1,10 @@
 import { useMemo } from 'react';
 import { Flame, Leaf, Fish, Heart } from 'lucide-react';
-import { BBQ_DATA } from '../data/kettleData';
 
-export function GrillTab({ filter, setFilter, setSelectedItem, toggleFavorite, favorites }) {
+export function GrillTab({ filter, setFilter, setSelectedItem, toggleFavorite, favorites, bbqData = [] }) {
   const filteredData = useMemo(() => {
-    return filter === 'all' ? BBQ_DATA : BBQ_DATA.filter(i => i.category === filter);
-  }, [filter]);
+    return filter === 'all' ? bbqData : bbqData.filter(i => i.category === filter);
+  }, [filter, bbqData]);
 
   const getMethodStyle = (method) => {
     if (method.includes('Indirecte') || method === 'Planche') 

@@ -5,13 +5,27 @@ import { getAuth, signInAnonymously, onAuthStateChanged, signInWithCustomToken }
 
 let app;
 let auth;
-let db;
+export let db;
 export const appId = typeof window !== 'undefined' && window.__app_id ? window.__app_id : 'kettle-master-v1';
 
 try {
-  const firebaseConfig = typeof window !== 'undefined' && window.__firebase_config ? JSON.parse(window.__firebase_config) : {};
-  if (Object.keys(firebaseConfig).length > 0) {
-    app = initializeApp(firebaseConfig);
+  // Check for Vite env variables first, then fallback to window injection
+  let config = {};
+  if (import.meta.env && import.meta.env.VITE_FIREBASE_API_KEY) {
+    config = {
+      apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+      authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+      projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+      storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+      messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+      appId: import.meta.env.VITE_FIREBASE_APP_ID
+    };
+  } else if (typeof window !== 'undefined' && window.__firebase_config) {
+    config = JSON.parse(window.__firebase_config);
+  }
+
+  if (Object.keys(config).length > 0) {
+    app = initializeApp(config);
     auth = getAuth(app);
     db = getFirestore(app);
   } else {
