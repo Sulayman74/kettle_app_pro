@@ -12,6 +12,7 @@ import { RecipeModal } from './components/RecipeModal';
 import { useFirebase } from './hooks/useFirebase';
 import { useTimer } from './hooks/useTimer';
 import { useKettleData } from './hooks/useKettleData';
+import { ReloadPrompt } from './components/ReloadPrompt';
 import { Flame } from 'lucide-react';
 
 export default function App() {
@@ -27,7 +28,8 @@ export default function App() {
   const [labSelection, setLabSelection] = useState('boeuf');
 
   return (
-    <div className="min-h-screen bg-[#0f172a] text-slate-100 font-sans pb-32">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-orange-500/30 flex flex-col relative pb-safe">
+      <ReloadPrompt />
       <Header 
         notifications={notifications} 
         showNotifs={showNotifs} 
@@ -46,7 +48,7 @@ export default function App() {
         removeTimer={removeTimer} 
       />
 
-      <main className="px-6 flex-1 flex flex-col">
+      <main className="px-6 pb-28 flex-1 flex flex-col">
         {loading ? (
           <div className="flex-1 flex flex-col items-center justify-center pt-32 animate-pulse">
             <div className="w-16 h-16 rounded-full bg-orange-500/20 flex items-center justify-center mb-4">
