@@ -1,15 +1,15 @@
 export const BBQ_DATA = [
-  { id: 1, name: "Merguez Artisanales", category: "boeuf", method: "Directe", time: "8m", target: "75°C", icon: "Flame", wood: "Vigne", desc: "Ne jamais piquer pour garder le jus épicé à l'intérieur.", amazon: "https://amazon.fr/s?k=grille+bbq+kettle" },
-  { id: 2, name: "Chicken Wings Crispy", category: "volaille", method: "Indir/Dir", time: "25m", target: "74°C", icon: "Zap", wood: "Pommier", desc: "Utilisez le rub 'Crispy' (levure chimique) pour une peau craquante.", amazon: "https://amazon.fr/s?k=rub+bbq+halal" },
-  { id: 3, name: "Côte de Bœuf (Reverse Sear)", category: "boeuf", method: "Indir/Dir", time: "45m", target: "54°C", icon: "Award", wood: "Chêne", desc: "Saisir en direct à la fin pour une croûte de Maillard parfaite.", amazon: "https://amazon.fr/s?k=thermometre+viande+professionnel" },
-  { id: 4, name: "Pdt en Papillote (Alu)", category: "legumes", method: "Indirecte", time: "45m", target: "92°C", icon: "Box", wood: "Chêne", desc: "Enveloppez avec du beurre, du gros sel et du romarin.", amazon: "https://amazon.fr/s?k=panier+legumes+bbq" },
-  { id: 5, name: "Maïs Doux (Épis)", category: "legumes", method: "Directe", time: "15m", target: "Caramélisé", icon: "Flame", wood: "Pommier", desc: "Retournez toutes les 3 min. Badigeonnez de beurre salé.", amazon: "https://amazon.fr/s?k=pique+mais+bbq" },
-  { id: 6, name: "Pavé de Saumon sur Planche", category: "poisson", method: "Planche", time: "12m", target: "63°C", icon: "Fish", wood: "Cèdre", desc: "Cuisinez sur une planche de cèdre trempée 2h dans l'eau.", amazon: "https://amazon.fr/s?k=planche+cedre+bbq" },
-  { id: 7, name: "Aubergines Grillées", category: "legumes", method: "Directe", time: "8m", target: "Fondant", icon: "Leaf", wood: "Vigne", desc: "Huilez généreusement chaque face avant la pose.", amazon: "https://amazon.fr/s?k=accessoire+legumes+bbq" },
-  { id: 8, name: "Short Ribs de Bœuf (Dino Ribs)", category: "boeuf", method: "Indirecte", time: "8h", target: "93°C", icon: "Timer", wood: "Hickory", desc: "Le Graal du BBQ Low & Slow. La viande doit être souple comme du beurre.", amazon: "https://amazon.fr/s?k=support+ribs+bbq" },
-  { id: 9, name: "Picanha de Bœuf Entière", category: "boeuf", method: "Indir/Dir", time: "50m", target: "52°C", icon: "Flame", wood: "Cerisier", desc: "Tranchez le gras en losange, démarrez en indirect côté chair.", amazon: "https://amazon.fr/s?k=couteau+trancher+viande" },
-  { id: 10, name: "Magret de Canard au Poivre", category: "canard", method: "Indirecte", time: "25m", target: "54°C", icon: "TrendingUp", wood: "Pécan", desc: "Cuisson indirecte exclusive côté peau pour fondre le gras sans flamme.", amazon: "https://amazon.fr/s?k=accessoire+kettle+weber" },
-  { id: 11, name: "Poulpe Grillé Smoky", category: "poisson", method: "Directe", time: "6m", target: "Croustillant", icon: "Activity", wood: "Aulne", desc: "Blanchir le poulpe avant, puis le raidir à feu ultra-vif avec un filet d'huile de sésame.", amazon: "https://amazon.fr/s?k=pince+barbecue+longue" }
+  { id: 1, name: "Merguez Artisanales", category: "boeuf", method: "Directe", time: "8m", target: "75°C", icon: "Flame", wood: "Vigne", desc: "Ne jamais piquer pour garder le jus épicé à l'intérieur.", amazon: "https://amazon.fr/s?k=grille+bbq+kettle&tag=kettleapppro2-21" },
+  { id: 2, name: "Chicken Wings Crispy", category: "volaille", method: "Indir/Dir", time: "25m", target: "74°C", icon: "Zap", wood: "Pommier", desc: "Utilisez le rub 'Crispy' (levure chimique) pour une peau craquante.", amazon: "https://amazon.fr/s?k=rub+bbq+halal&tag=kettleapppro2-21" },
+  { id: 3, name: "Côte de Bœuf (Reverse Sear)", category: "boeuf", method: "Indir/Dir", time: "45m", target: "54°C", icon: "Award", wood: "Chêne", desc: "Saisir en direct à la fin pour une croûte de Maillard parfaite.", amazon: "https://amazon.fr/s?k=thermometre+viande+professionnel&tag=kettleapppro2-21" },
+  { id: 4, name: "Pdt en Papillote (Alu)", category: "legumes", method: "Indirecte", time: "45m", target: "92°C", icon: "Box", wood: "Chêne", desc: "Enveloppez avec du beurre, du gros sel et du romarin.", amazon: "https://amazon.fr/s?k=panier+legumes+bbq&tag=kettleapppro2-21" },
+  { id: 5, name: "Maïs Doux (Épis)", category: "legumes", method: "Directe", time: "15m", target: "Caramélisé", icon: "Flame", wood: "Pommier", desc: "Retournez toutes les 3 min. Badigeonnez de beurre salé.", amazon: "https://amazon.fr/s?k=pique+mais+bbq&tag=kettleapppro2-21" },
+  { id: 6, name: "Pavé de Saumon sur Planche", category: "poisson", method: "Planche", time: "12m", target: "63°C", icon: "Fish", wood: "Cèdre", desc: "Cuisinez sur une planche de cèdre trempée 2h dans l'eau.", amazon: "https://amazon.fr/s?k=planche+cedre+bbq&tag=kettleapppro2-21" },
+  { id: 7, name: "Aubergines Grillées", category: "legumes", method: "Directe", time: "8m", target: "Fondant", icon: "Leaf", wood: "Vigne", desc: "Huilez généreusement chaque face avant la pose.", amazon: "https://amazon.fr/s?k=accessoire+legumes+bbq&tag=kettleapppro2-21" },
+  { id: 8, name: "Short Ribs de Bœuf (Dino Ribs)", category: "boeuf", method: "Indirecte", time: "8h", target: "93°C", icon: "Timer", wood: "Hickory", desc: "Le Graal du BBQ Low & Slow. La viande doit être souple comme du beurre.", amazon: "https://amazon.fr/s?k=support+ribs+bbq&tag=kettleapppro2-21" },
+  { id: 9, name: "Picanha de Bœuf Entière", category: "boeuf", method: "Indir/Dir", time: "50m", target: "52°C", icon: "Flame", wood: "Cerisier", desc: "Tranchez le gras en losange, démarrez en indirect côté chair.", amazon: "https://amazon.fr/s?k=couteau+trancher+viande&tag=kettleapppro2-21" },
+  { id: 10, name: "Magret de Canard au Poivre", category: "canard", method: "Indirecte", time: "25m", target: "54°C", icon: "TrendingUp", wood: "Pécan", desc: "Cuisson indirecte exclusive côté peau pour fondre le gras sans flamme.", amazon: "https://amazon.fr/s?k=accessoire+kettle+weber&tag=kettleapppro2-21" },
+  { id: 11, name: "Poulpe Grillé Smoky", category: "poisson", method: "Directe", time: "6m", target: "Croustillant", icon: "Activity", wood: "Aulne", desc: "Blanchir le poulpe avant, puis le raidir à feu ultra-vif avec un filet d'huile de sésame.", amazon: "https://amazon.fr/s?k=pince+barbecue+longue&tag=kettleapppro2-21" }
 ];
 
 export const LAB_DATA = {
@@ -81,7 +81,7 @@ export const RECIPES = [
       "Placez le poulet en zone indirecte pendant 40-45 min.",
       "Vérifiez l'atteinte des 74°C à cœur au thermomètre."
     ],
-    gear: { name: "Thermomètre à sonde", link: "https://amazon.fr/s?k=thermometre+bbq" }
+    gear: { name: "Thermomètre à sonde", link: "https://amazon.fr/s?k=thermometre+bbq&tag=kettleapppro2-21" }
   },
   {
     id: "r2",
@@ -98,7 +98,7 @@ export const RECIPES = [
       "Fumez pendant environ 5h jusqu'à ce que le 'stall' soit passé et que le bark soit bien fixé.",
       "Emballez dans du papier de boucher (butcher paper) ou double alu et poursuivez jusqu'à 93-95°C à cœur."
     ],
-    gear: { name: "Papier de boucher BBQ", link: "https://amazon.fr/s?k=butcher+paper+bbq" }
+    gear: { name: "Papier de boucher BBQ", link: "https://amazon.fr/s?k=butcher+paper+bbq&tag=kettleapppro2-21" }
   },
   {
     id: "r3",
@@ -114,7 +114,7 @@ export const RECIPES = [
       "Disposez en zone indirecte à 220°C pendant 25 min en retournant à mi-cuisson.",
       "Pendant les 5 dernières minutes, badigeonnez de miel directement sur la grille en zone directe pour caraméliser sans brûler."
     ],
-    gear: { name: "Pince de précision", link: "https://amazon.fr/s?k=pince+bbq" }
+    gear: { name: "Pince de précision", link: "https://amazon.fr/s?k=pince+bbq&tag=kettleapppro2-21" }
   },
   {
     id: "r4",
@@ -130,7 +130,7 @@ export const RECIPES = [
       "Saisissez le bœuf très rapidement en zone directe (cuisson flash, 1 à 2 min par face) pour choper le goût du feu sans assécher.",
       "Montez vos baguettes avec une mayonnaise légère, le bœuf smoky chaud, les pickles croquants et un max de coriandre."
     ],
-    gear: { name: "Grille en fonte de saisie", link: "https://amazon.fr/s?k=grille+fonte+bbq+kettle" }
+    gear: { name: "Grille en fonte de saisie", link: "https://amazon.fr/s?k=grille+fonte+bbq+kettle&tag=kettleapppro2-21" }
   }
 ];
 
@@ -159,6 +159,6 @@ export const METHOD_LEGEND = [
 ];
 
 export const SHOP_ITEMS = [
-  { id: 's1', name: "Thermomètre Instantané", price: "19.99€", rating: 4.8, img: "🌡️", link: "https://amazon.fr/s?k=thermometre+bbq", sponsor: true },
-  { id: 's2', name: "Cheminée d'Allumage", price: "24.50€", rating: 4.9, img: "🔥", link: "https://amazon.fr/s?k=cheminee+allumage+bbq", sponsor: false }
+  { id: 's1', name: "Thermomètre Instantané", price: "19.99€", rating: 4.8, img: "🌡️", link: "https://amazon.fr/s?k=thermometre+bbq&tag=kettleapppro2-21", sponsor: true },
+  { id: 's2', name: "Cheminée d'Allumage", price: "24.50€", rating: 4.9, img: "🔥", link: "https://amazon.fr/s?k=cheminee+allumage+bbq&tag=kettleapppro2-21", sponsor: false }
 ];

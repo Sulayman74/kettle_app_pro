@@ -18,6 +18,9 @@ export function ShopTab({ shopItems = [] }) {
           </div>
         ))}
       </div>
+      <p className="text-xs text-slate-500 italic text-center pb-8">
+        En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.
+      </p>
     </div>
   );
 }
