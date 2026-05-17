@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html, body {
+    /* Empêche le pull-to-refresh et l'effet élastique (rubber band) */
+    overscroll-behavior-y: none;
+    /* Empêche la sélection de texte accidentelle */
+    -webkit-user-select: none;
+    user-select: none;
+    /* Désactive le menu contextuel au clic long (loupe/copier sur iOS) */
+    -webkit-touch-callout: none;
+    /* Enlève le rectangle bleu de surbrillance au tap sur mobile */
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* On réactive la sélection pour les champs de saisie */
+  input, textarea {
+    -webkit-user-select: auto;
+    user-select: auto;
+  }
+}
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
