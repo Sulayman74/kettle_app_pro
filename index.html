@@ -24,8 +24,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+      html, body { margin: 0; padding: 0; background: #0f172a; }
+      #app-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: #0f172a;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.75rem;
+        opacity: 1;
+        transition: opacity 500ms ease-out;
+      }
+      #app-splash.fade-out {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #app-splash .splash-logo {
+        width: 128px;
+        height: 128px;
+        border-radius: 28px;
+        box-shadow: 0 24px 60px -8px rgba(249, 115, 22, 0.35), 0 0 0 1px rgba(255,255,255,0.04);
+        animation: splash-pulse 1.6s ease-in-out infinite;
+      }
+      #app-splash .splash-title {
+        margin: 0;
+        color: #f1f5f9;
+        font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: -0.02em;
+        font-size: 1.375rem;
+        text-transform: uppercase;
+        line-height: 1;
+      }
+      #app-splash .splash-sub {
+        margin: 0.5rem 0 0;
+        color: #f97316;
+        font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+        font-size: 0.625rem;
+        font-weight: 800;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      @keyframes splash-pulse {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(0.94); opacity: 0.75; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #app-splash .splash-logo { animation: none; }
+        #app-splash { transition: opacity 200ms ease-out; }
+      }
+    </style>
   </head>
   <body>
+    <div id="app-splash" role="status" aria-label="Chargement de Kettle Master Pro">
+      <img src="/pwa-512x512.png" alt="" class="splash-logo" />
+      <div>
+        <p class="splash-title">Kettle Master Pro</p>
+        <p class="splash-sub">Allumage des braises…</p>
+      </div>
+    </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

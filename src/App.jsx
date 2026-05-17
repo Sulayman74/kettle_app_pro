@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { NotificationPanel } from './components/NotificationPanel';
 import { TimerPanel } from './components/TimerPanel';
@@ -15,6 +15,10 @@ import { useKettleData } from './hooks/useKettleData';
 import { ReloadPrompt } from './components/ReloadPrompt';
 import { Flame } from 'lucide-react';
 
+const SPLASH_MIN_MS = 700;
+const SPLASH_FADE_MS = 500;
+const splashStartedAt = Date.now();
+
 export default function App() {
   const { favorites, toggleFavorite } = useFirebase();
   const { timers, addTimer, removeTimer, notifications, clearNotifications } = useTimer();
@@ -26,6 +30,19 @@ export default function App() {
   const [filter, setFilter] = useState('all');
   const [showNotifs, setShowNotifs] = useState(false);
   const [labSelection, setLabSelection] = useState('boeuf');
+
+  useEffect(() => {
+    if (loading) return;
+    const splash = document.getElementById('app-splash');
+    if (!splash) return;
+    const wait = Math.max(0, SPLASH_MIN_MS - (Date.now() - splashStartedAt));
+    const fadeId = setTimeout(() => splash.classList.add('fade-out'), wait);
+    const removeId = setTimeout(() => splash.remove(), wait + SPLASH_FADE_MS + 80);
+    return () => {
+      clearTimeout(fadeId);
+      clearTimeout(removeId);
+    };
+  }, [loading]);
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans selection:bg-orange-500/30 flex flex-col relative pb-safe">
