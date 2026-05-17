@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import { withAffiliate } from '../utils/affiliate';
 
 export function ShopTab({ shopItems = [] }) {
   return (
@@ -10,9 +11,9 @@ export function ShopTab({ shopItems = [] }) {
             <div className="text-3xl w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform">{p.img}</div>
             <div className="flex-1 px-4">
               <h4 className="font-bold text-sm group-hover:text-orange-400 transition-colors uppercase tracking-tight">{p.name}</h4>
-              <p className="text-orange-500 font-black text-lg">{p.price}</p>
+              <p className="text-orange-500 font-black text-sm uppercase tracking-widest italic">Voir prix sur Amazon</p>
             </div>
-            <a href={p.link} target="_blank" rel="noopener noreferrer" className="p-4 bg-orange-500 rounded-2xl shadow-lg shadow-orange-500/20 active:bg-orange-600">
+            <a href={withAffiliate(p.link)} target="_blank" rel="noopener noreferrer" className="p-4 bg-orange-500 rounded-2xl shadow-lg shadow-orange-500/20 active:bg-orange-600">
               <ExternalLink className="w-5 h-5 text-white" />
             </a>
           </div>

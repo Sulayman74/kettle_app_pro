@@ -1,4 +1,5 @@
 import { X, Thermometer, Timer } from 'lucide-react';
+import { withAffiliate } from '../utils/affiliate';
 
 export function ItemModal({ selectedItem, setSelectedItem, addTimer }) {
   if (!selectedItem) return null;
@@ -28,7 +29,7 @@ export function ItemModal({ selectedItem, setSelectedItem, addTimer }) {
         </div>
         <div className="p-6 bg-white/5 border border-white/10 rounded-[2.5rem] space-y-4">
           <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest italic">Équipement Master Recommandé</p>
-          <a href={selectedItem.amazon} target="_blank" rel="noopener noreferrer" className="block w-full py-5 bg-white text-black rounded-[2rem] font-black uppercase text-sm hover:bg-orange-500 hover:text-white transition-all shadow-xl tracking-widest">
+          <a href={withAffiliate(selectedItem.amazon)} target="_blank" rel="noopener noreferrer" className="block w-full py-5 bg-white text-black rounded-[2rem] font-black uppercase text-sm hover:bg-orange-500 hover:text-white transition-all shadow-xl tracking-widest">
             Voir sur Amazon
           </a>
         </div>

@@ -1,4 +1,5 @@
 import { ChevronLeft, Timer, Thermometer } from 'lucide-react';
+import { withAffiliate } from '../utils/affiliate';
 
 export function RecipeModal({ selectedRecipe, setSelectedRecipe, addTimer }) {
   if (!selectedRecipe) return null;
@@ -28,7 +29,7 @@ export function RecipeModal({ selectedRecipe, setSelectedRecipe, addTimer }) {
             <h5 className="text-[10px] font-black uppercase text-orange-500 italic">Outil Recommandé</h5>
             <div className="flex justify-between items-center">
               <p className="text-sm font-bold">{selectedRecipe.gear.name}</p>
-              <a href={selectedRecipe.gear.link} target="_blank" rel="noopener noreferrer" className="bg-orange-500 text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest">Acheter</a>
+              <a href={withAffiliate(selectedRecipe.gear.link)} target="_blank" rel="noopener noreferrer" className="bg-orange-500 text-white px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest">Acheter</a>
             </div>
           </div>
         </div>
